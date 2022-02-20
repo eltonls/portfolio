@@ -1,0 +1,16 @@
+@use "../utils/variables" as variables;
+
+.btn {
+  padding: 1rem 2rem;
+  border-radius: 0.3em;
+  font-weight: bold;
+}
+
+.btn--dark {
+  background-color: variables.$color-primary;
+  color: variables.$color-white;
+}
+.btn--white {
+  background-color: variables.$color-white;
+  color: variables.$color-primary;
+}

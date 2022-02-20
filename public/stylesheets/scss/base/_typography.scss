@@ -1,54 +1,64 @@
 @use "../utils/variables" as variables;
 
 @font-face {
-    font-family: 'Nafta';
-    src: url('../../../fonts/NaftaLight-Regular.woff2') format('woff2'),
-        url('../../../fonts/NaftaLight-Regular.woff') format('woff');
-    font-weight: 300;
-    font-style: normal;
-    font-display: swap;
+  font-family: "Nafta";
+  src: url("../../../fonts/NaftaLight-Regular.woff2") format("woff2"),
+    url("../../../fonts/NaftaLight-Regular.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
-    font-family: 'Ramona';
-    src: url('../../../fonts/Ramona-Bold.woff2') format('woff2'),
-        url('../../../fonts/Ramona-Bold.woff') format('woff');
-    font-weight: bold;
-    font-style: normal;
-    font-display: swap;
+  font-family: "Ramona";
+  src: url("../../../fonts/Ramona-Bold.woff2") format("woff2"),
+    url("../../../fonts/Ramona-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
-    font-family: 'Ramona';
-    src: url('../../../fonts/Ramona-Light.woff2') format('woff2'),
-        url('../../../fonts/Ramona-Light.woff') format('woff');
-    font-weight: 300;
-    font-style: normal;
-    font-display: swap;
+  font-family: "Ramona";
+  src: url("../../../fonts/Ramona-Light.woff2") format("woff2"),
+    url("../../../fonts/Ramona-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
 }
 
-body{ 
-    font-size: 1.6rem;
+body {
+  font-size: 1.6rem;
+  font-family: "Yanone Kaffeesatz", sans-serif;
+}
+.highlight {
+  font-weight: bold;
+  color: variables.$color-secondary;
 }
 
-.heading-primary{
-    font-family: 'Ramona', serif;
-    font-weight: 300;
-    font-size: 4rem;
+.heading-primary {
+  font-family: "Ramona", serif;
+  font-weight: bold;
+  font-size: 4rem;
 }
-.heading-senary{
-    font-family: "Ramona", serif;
-    font-weight: bold;
-    font-size: 2.5rem;
-    letter-spacing: 2px;
-    text-transform: uppercase;
+.heading-secondary {
+  font-family: "Ramona", serif;
+  font-weight: 300;
+  font-size: 2.5rem;
+}
+.heading-senary {
+  font-family: "Ramona", serif;
+  font-weight: bold;
+  font-size: 2.5rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
 }
 
 a:link,
-a:visited{
-    color: variables.$color-secondary;
-    text-decoration: none;
+a:visited {
+  font-family: "Ramona";
+  text-decoration: none;
 }
 a:hover {
-    color: variables.$color-tertiary;
+  color: variables.$color-tertiary;
 }

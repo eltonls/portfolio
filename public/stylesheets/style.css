@@ -1,3 +1,133 @@
-body{
-	font-size: 1.6rem;
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
 }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+@font-face {
+  font-family: "Nafta";
+  src: url("../../../fonts/NaftaLight-Regular.woff2") format("woff2"), url("../../../fonts/NaftaLight-Regular.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Ramona";
+  src: url("../../../fonts/Ramona-Bold.woff2") format("woff2"), url("../../../fonts/Ramona-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Ramona";
+  src: url("../../../fonts/Ramona-Light.woff2") format("woff2"), url("../../../fonts/Ramona-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+body {
+  font-size: 1.6rem;
+}
+
+.heading-primary {
+  font-family: "Ramona", serif;
+  font-weight: 300;
+  font-size: 4rem;
+}
+
+.heading-senary {
+  font-family: "Ramona", serif;
+  font-weight: bold;
+  font-size: 2.5rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+a:link,
+a:visited {
+  color: #FF934F;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #33CA7F;
+}
+
+.header {
+  width: 100%;
+  padding: 3rem 10rem;
+  background-color: #041F1E;
+  color: #FF934F;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.nav__menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.nav__item {
+  margin: 0 1.5rem;
+}
+.nav__link {
+  color: inherit;
+}
+
+/*# sourceMappingURL=style.css.map */

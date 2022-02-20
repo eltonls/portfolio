@@ -1,0 +1,14 @@
+@use "../utils/_variables" as variables;
+
+.header{
+    width: 100%;
+    padding: 3rem 10rem;
+    background-color: variables.$color-primary;
+    color: variables.$color-secondary;
+
+    // display:
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+}

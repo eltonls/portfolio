@@ -1,0 +1,15 @@
+@use "../utils/variables";
+
+.nav{
+    &__menu{
+       display: flex;
+       flex-direction: row;         
+       justify-content: space-around;
+    }
+    &__item{
+        margin: 0 1.5rem;
+    }
+    &__link{
+        color: inherit;
+    }
+}

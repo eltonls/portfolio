@@ -5,13 +5,15 @@
   },
   "devDependencies": {
     "eslint": "^8.9.0",
-    "prettier": "^2.5.1"
+    "prettier": "^2.5.1",
+    "sass": "^1.49.8"
   },
   "name": "portfolio",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "serve": "nodemon app.js"
+    "serve": "nodemon app.js",
+		"compile:sass": "sass public/stylesheets/scss/main.scss public/stylesheets/style.css -w"
   },
   "author": "Elton",
   "license": "ISC",

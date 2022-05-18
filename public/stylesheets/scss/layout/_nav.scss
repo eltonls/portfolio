@@ -1,15 +1,36 @@
 @use "../utils/variables";
+@use "../utils/mixins" as mixins;
 
 .nav{
     &__menu{
        display: flex;
        flex-direction: row;         
        justify-content: space-around;
+	   @include mixins.for-phone-only{
+	        display: none;	
+	   }
     }
     &__item{
         margin: 0 1.5rem;
     }
     &__link{
         color: inherit;
-    }
+    }		
+}
+
+// to show the menu when the button is pressed
+.show {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 3.5rem;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100vw;
+    height: 100vh;
+    background-color: variables.$color-primary;
+    z-index: 0;
 }
